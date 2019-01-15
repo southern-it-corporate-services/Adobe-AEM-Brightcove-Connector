@@ -406,6 +406,57 @@
             </pluginRepositories>
         </profile>
     </profiles>
+	
+	<profile>
+            <id>DEVServer</id>
+            <properties>
+                <aem.host>dv-southern-aem.cloudapp.net</aem.host>
+                <aem.port>4502</aem.port>
+                <aem.publish.host>dv-southern-aem.cloudapp.net</aem.publish.host>
+                <aem.publish.port>4503</aem.publish.port>
+                <sling.user>smckaharay</sling.user>
+                <sling.password>YYT7+Uere~9V</sling.password>
+                <vault.user>smckaharay</vault.user>
+                <vault.password>YYT7+Uere~9V</vault.password>
+                <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
+                <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
+                <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+            </properties>
+            
+            <repositories>
+                <repository>
+                    <id>adobe-public-releases</id>
+                    <name>Adobe Public Repository</name>
+                    <url>https://repo.adobe.com/nexus/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+				<repository>
+					<id>myMavenRepo.read</id>
+					<url>https://mymavenrepo.com/repo/umgi2IEvu6Jw8eH5apJC/</url>
+				</repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>adobe-public-releases</id>
+                    <name>Adobe Public Repository</name>
+                    <url>https://repo.adobe.com/nexus/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
 
 
     <!-- ====================================================================== -->
