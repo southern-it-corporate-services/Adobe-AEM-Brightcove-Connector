@@ -405,9 +405,7 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
-    </profiles>
-	
-	<profile>
+		<profile>
             <id>DEVServer</id>
             <properties>
                 <aem.host>dv-southern-aem.cloudapp.net</aem.host>
@@ -457,9 +455,9 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
-
-
-    <!-- ====================================================================== -->
+    </profiles>
+	
+	    <!-- ====================================================================== -->
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencyManagement>
